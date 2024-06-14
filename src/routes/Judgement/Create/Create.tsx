@@ -21,7 +21,7 @@ export default function Create() {
             Numero: '00001',
             Nom: 'Ravaoavy',
             Prenom: 'Aina soa',
-            Demande: 'Copy de naissance',
+            Demande: 'Certificat de décé',
             Status: Status.Done,
         },
     ]
