@@ -116,7 +116,7 @@ const Root: FC = () => {
                                     color={theme.colors.gray[6]}
                                 />
                                 <Title order={3} color="mint">
-                                    Enregistrement Rétroactif de Naissance (ERN)
+                                   E-Fokotany
                                 </Title>
                             </Group>
 

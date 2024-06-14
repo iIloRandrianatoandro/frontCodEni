@@ -1,14 +1,23 @@
-import { Box } from "@mantine/core"
+import { Box } from '@mantine/core'
+import { Button } from '@mantine/core'
+import { IconCirclePlus } from '@tabler/icons-react'
+import { useNavigate } from 'react-router-dom'
 
 const Judgement: React.FC = () => {
-    return(
-        <Box>This is my board</Box>
+    const navigate = useNavigate()
+    return (
+        <>
+            <Button
+                bg={"cadet"}
+                onClick={() => navigate('create')}
+                size="lg"
+                leftIcon={<IconCirclePlus />}
+            >
+                Hampiditra
+            </Button>
+        </>
     )
 }
-  
-
-
-
 
 Judgement.displayName = 'Judgement page'
 
