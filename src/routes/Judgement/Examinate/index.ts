@@ -1,1 +1,0 @@
-export { default as Examinate } from '@/routes/Judgement/Examinate/Examinate'

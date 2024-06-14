@@ -6,16 +6,11 @@ import {
     Root,
     Judgement,
     Create,
-    Update,
-    Details,
     History,
-    List,
 } from '@/routes'
 import PrivateRoute from '@/components/PrivateRoute/PrivateRoute'
 import { Role } from '@/features/admin/types'
-import { Launch } from '@/routes/Judgement/Launch'
-import { Examinate } from '@/routes/Judgement/Examinate'
-import Fruitless from '@/routes/Judgement/Fruitless/Fruitless'
+
 
 
 const router = createBrowserRouter([
@@ -44,32 +39,12 @@ const router = createBrowserRouter([
                         element: <Create />,
                     },
                     {
-                        path: 'update/:judgementRequestId',
-                        element: <Update />,
-                    },
-                    {
-                        path: 'details/:judgementRequestId',
-                        element: <Details />,
-                    },
-                    {
-                        path: 'list',
-                        element: <List />,
+                        path: 'create/residence-crt/:citizenId',
+                        element: <Residence />,
                     },
                     {
                         path: 'history',
                         element: <History />,
-                    },
-                    {
-                        path: 'launch/:judgementRequestId',
-                        element: <Launch />,
-                    },
-                    {
-                        path: 'examinate/:judgementRequestId',
-                        element: <Examinate />,
-                    },
-                    {
-                        path: 'fruitlessSearch/:judgementRequestId',
-                        element: <Fruitless />,
                     },
                 ],
             },
@@ -91,7 +66,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/login',
-        element: <Residence />,
+        element: <Login />,
     },
 ])
 

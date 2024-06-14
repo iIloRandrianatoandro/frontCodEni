@@ -32,7 +32,7 @@ import ActionMenu, {
 } from './components/Table/ActionMenu/ActionMenu'
 import constants from '@/core/constants'
 import { useDisclosure } from '@mantine/hooks'
-import { DeleteJudgment } from '@/routes/Judgement/Delete/'
+// import { DeleteJudgment } from '@/routes/Judgement/Delete/'
 import { useNavigate } from 'react-router-dom'
 import { maxDob } from '@/core/dateManagement'
 import { Role } from '../admin/types'
@@ -145,10 +145,10 @@ const DestroyJudgment: React.FC<JudgmentRequestDtoProps> = ({
                 size="lg"
                 title="Tena te-hamafa ity fanambaran ity ve ianao?"
             >
-                <DeleteJudgment
+                {/* <DeleteJudgment
                     onClose={close}
                     judgment={judgment}
-                ></DeleteJudgment>
+                ></DeleteJudgment> */}
             </Modal>
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Title, Table, Badge, Group, ActionIcon } from '@mantine/core'
 import { IconDots } from '@tabler/icons-react'
+import { useNavigate } from 'react-router-dom'
 
 enum Status{
     Done="Terminé",
@@ -9,6 +10,7 @@ enum Status{
 }
 
 export default function Create() {
+    const navigate = useNavigate()
     const elements = [
         {
             Numero: '00001',
@@ -36,7 +38,7 @@ export default function Create() {
                     <Badge color={element.Status==Status.Done?"teal":"red"} variant="filled">
                         {element.Status}
                     </Badge>
-                    <ActionIcon>
+                    <ActionIcon onClick={()=>navigate("residence-crt/15")}>
                         <IconDots></IconDots>
                     </ActionIcon>
                 </Group>
