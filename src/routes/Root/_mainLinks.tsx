@@ -26,9 +26,9 @@ function MainLink({ icon, label, to, roles, active, onClick }: MainLinkProps) {
     const userHasRequiredRole =
         currentUser && roles.includes(currentUser.role) ? true : false
 
-    if (!userHasRequiredRole) {
-        return null
-    }
+    // if (!userHasRequiredRole) {
+    //     return null
+    // }
 
     return (
         <NavLink

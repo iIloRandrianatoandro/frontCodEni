@@ -7,10 +7,6 @@ import {
     Image,
     Title,
     useMantineTheme,
-    Flex,
-    Button,
-    Container,
-    Grid,
     Paper,
     Space,
     Stack,
@@ -30,9 +26,9 @@ import { MainLinks } from './_mainLinks'
 import User from './_user'
 import { useDisclosure } from '@mantine/hooks'
 import cneciLogo from '@/assets/logo-cneci.svg'
-import { persistor, useTypedDispatch, useTypedSelector } from '@/store'
+import { useTypedDispatch, useTypedSelector } from '@/store'
 import { useLazyLogoutQuery } from '@/features/authentication/authenticationApi'
-import { resetStateAction } from '@/store/actions'
+
 import { Role } from '@/features/admin/types'
 import { logoutUser } from '@/features/authentication/state/slice'
 import logoTamatave from '../../assets/logoTamatave.svg'
