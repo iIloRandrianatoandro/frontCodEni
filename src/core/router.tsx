@@ -27,7 +27,7 @@ const router = createBrowserRouter([
             {
                 element: (
                     // <PrivateRoute roles={[Role.ADMIN, Role.CENTRAL]}>
-                        <Dashboard />
+                    <Dashboard />
                     // </PrivateRoute>
                 ),
                 index: true,
