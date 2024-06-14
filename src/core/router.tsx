@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
+import Residence from '@/routes/Judgement/Create/components/Residence/Residence'
 import {
     Dashboard,
     Login,
@@ -10,13 +11,12 @@ import {
     History,
     List,
 } from '@/routes'
-import { Admin } from '@/routes/Admin'
 import PrivateRoute from '@/components/PrivateRoute/PrivateRoute'
 import { Role } from '@/features/admin/types'
 import { Launch } from '@/routes/Judgement/Launch'
 import { Examinate } from '@/routes/Judgement/Examinate'
 import Fruitless from '@/routes/Judgement/Fruitless/Fruitless'
-import { Edit } from '@/routes/Judgement/Edit'
+
 
 const router = createBrowserRouter([
     {
@@ -42,10 +42,6 @@ const router = createBrowserRouter([
                     {
                         path: 'create',
                         element: <Create />,
-                    },
-                    {
-                        path: 'edit/:judgmentRequestId',
-                        element: <Edit />,
                     },
                     {
                         path: 'update/:judgementRequestId',
@@ -78,24 +74,24 @@ const router = createBrowserRouter([
                 ],
             },
 
-            {
-                path: 'admin',
-                children: [
-                    {
-                        element: (
-                            <PrivateRoute roles={[Role.ADMIN]}>
-                                <Admin />
-                            </PrivateRoute>
-                        ),
-                        index: true,
-                    },
-                ],
-            },
+            // {
+            //     path: 'admin',
+            //     children: [
+            //         {
+            //             element: (
+            //                 // <PrivateRoute roles={[Role.ADMIN]}>
+            //                 //     <Admin />
+            //                 // </PrivateRoute>
+            //             ),
+            //             index: true,
+            //         },
+            //     ],
+            // },
         ],
     },
     {
         path: '/login',
-        element: <Login />,
+        element: <Residence />,
     },
 ])
 

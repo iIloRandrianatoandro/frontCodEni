@@ -34,7 +34,7 @@ export default function Create() {
             <td>
                 <Group>
                     <Badge color={element.Status==Status.Done?"teal":"red"} variant="filled">
-                        Terminé
+                        {element.Status}
                     </Badge>
                     <ActionIcon>
                         <IconDots></IconDots>
