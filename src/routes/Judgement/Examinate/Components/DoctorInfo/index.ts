@@ -1,0 +1,1 @@
+export { default as DoctorInfo } from '@/routes/Judgement/Examinate/Components/DoctorInfo/DoctorInfo'

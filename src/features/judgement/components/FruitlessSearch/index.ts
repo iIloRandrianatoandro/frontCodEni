@@ -1,0 +1,1 @@
+export { default as FruitlessSearch } from '@/features/judgement/components/FruitlessSearch/FruitlessSearch'

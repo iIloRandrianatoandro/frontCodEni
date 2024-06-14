@@ -1,0 +1,1 @@
+export { default as Launch } from '@/routes/Judgement/Launch/Launch'

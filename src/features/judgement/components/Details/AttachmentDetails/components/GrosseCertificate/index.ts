@@ -1,0 +1,1 @@
+export {default as GrosseCertificate } from '@/features/judgement/components/Details/AttachmentDetails/components/GrosseCertificate/GrosseCertificate'

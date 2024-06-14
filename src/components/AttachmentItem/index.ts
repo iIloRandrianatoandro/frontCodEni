@@ -1,0 +1,1 @@
+export { default as AttachmentItem } from '@/components/AttachmentItem/AttachmentItem'

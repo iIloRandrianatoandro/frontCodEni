@@ -1,0 +1,1 @@
+export { default as JudgmentCertificateForm } from '@/features/judgement/components/Details/JudgmentCertificate/components/JudgmentCertificateForm/JudgmentCertificateForm'

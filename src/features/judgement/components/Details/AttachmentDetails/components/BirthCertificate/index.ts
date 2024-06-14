@@ -1,0 +1,1 @@
+export { default as BirthCertificate } from '@/features/judgement/components/Details/AttachmentDetails/components/BirthCertificate/BirthCertificate'

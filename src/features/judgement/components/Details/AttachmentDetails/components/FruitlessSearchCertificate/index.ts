@@ -1,0 +1,1 @@
+export { default as FruitlessSearchCertificate } from '@/features/judgement/components/Details/AttachmentDetails/components/FruitlessSearchCertificate/FruitlessSearchCertificate'

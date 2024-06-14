@@ -1,0 +1,1 @@
+export { default as LocalizationBar } from '@/features/common/location/LocalizationBar'

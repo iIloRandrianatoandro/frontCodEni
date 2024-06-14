@@ -1,0 +1,1 @@
+export { default as ApplicantsParentForm } from './ApplicantsParentForm'

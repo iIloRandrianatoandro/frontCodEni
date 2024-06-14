@@ -1,0 +1,6 @@
+.git
+*.md
+dist
+.gitignore
+node_modules
+package-lock.json

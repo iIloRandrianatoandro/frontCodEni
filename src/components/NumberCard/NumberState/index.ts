@@ -1,0 +1,1 @@
+export { default as NumberState } from '@/components/NumberCard/NumberState/NumberState'

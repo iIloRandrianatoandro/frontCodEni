@@ -1,0 +1,1 @@
+export { default as SomaticExamCertificate } from '@/features/judgement/components/Details/AttachmentDetails/components/SomaticExamCertificate/SomaticExamCertificate'

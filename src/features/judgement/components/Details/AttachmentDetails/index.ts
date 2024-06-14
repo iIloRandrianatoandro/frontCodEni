@@ -1,0 +1,1 @@
+export { default as AttachmentDetails } from './AttachmentDetails'

@@ -1,0 +1,1 @@
+export { default as PrintAttachmentModal } from '@/components/AttachmentItem/components/PrintAttachmentModal/PrintAttachmentModal'
