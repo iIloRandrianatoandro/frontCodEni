@@ -7,6 +7,7 @@ import {
     Create,
     Update,
     Details,
+    History,
     List,
 } from '@/routes'
 import { Admin } from '@/routes/Admin'
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
                     {
                         path: 'list',
                         element: <List />,
+                    },
+                    {
+                        path: 'history',
+                        element: <History />,
                     },
                     {
                         path: 'launch/:judgementRequestId',

@@ -4,6 +4,7 @@ import {
     IconLayoutDashboard,
     IconUserCog,
     IconUserShield,
+    IconHistory
 } from '@tabler/icons-react'
 import { NavLink } from '@mantine/core'
 import { useTypedSelector } from '@/store'
@@ -71,6 +72,24 @@ const data = [
         label: 'Tableau de bord',
         to: '/',
         roles: [Role.ADMIN, Role.CENTRAL],
+    },
+    {
+        icon: <IconUserShield size="1.5rem" />,
+        color: 'mint',
+        label: 'Nouvelle demande',
+        to: 'judgement/create',
+        roles: [
+            Role.P_FOKONTANY,
+        ],
+    },
+    {
+        icon: <IconHistory size="1.5rem" />,
+        color: 'mint',
+        label: 'Historique',
+        to: 'judgement/history',
+        roles: [
+            Role.P_FOKONTANY,
+        ],
     },
     {
         icon: <IconUserShield size="1.5rem" />,
